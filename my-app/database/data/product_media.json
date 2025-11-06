@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Arroz Tio João 5kg",
+    "description": "Arroz tipo 1 de grãos longos, ideal para pratos soltinhos e saborosos.",
+    "image_url": "https://images.unsplash.com/photo-1505935428862-770b6f24f629?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Feijão Carioca 1kg",
+    "description": "Feijão carioca selecionado, perfeito para o feijão de todos os dias.",
+    "image_url": "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Açúcar Cristal 1kg",
+    "description": "Açúcar cristal de alta pureza, indispensável para cafés e receitas.",
+    "image_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Óleo de Soja 900ml",
+    "description": "Óleo de soja refinado, ideal para frituras leves e salteados.",
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Macarrão Espaguete 500g",
+    "description": "Espaguete de trigo enriquecido, com textura perfeita para diversos molhos.",
+    "image_url": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Leite Integral 1L",
+    "description": "Leite integral UHT, fresco e rico em cálcio.",
+    "image_url": "https://images.unsplash.com/photo-1582719478181-2cf4e1f7f22a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Pão de Açúcar 500g",
+    "description": "Pão de forma macio, ideal para lanches e cafés da manhã.",
+    "image_url": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Café Pilão 500g",
+    "description": "Café torrado e moído com aroma intenso e sabor encorpado.",
+    "image_url": "https://images.unsplash.com/photo-1511466153984-6c1d41b72fe3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Sal Refinado 1kg",
+    "description": "Sal refinado iodado para temperar com precisão.",
+    "image_url": "https://images.unsplash.com/photo-1615485290382-f8cbf96e7b0a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Farinha de Trigo 1kg",
+    "description": "Farinha de trigo branca para massas, bolos e pães.",
+    "image_url": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Açúcar Refinado 1kg",
+    "description": "Açúcar refinado fininho, perfeito para confeitaria.",
+    "image_url": "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Óleo de Girassol 900ml",
+    "description": "Óleo de girassol leve, rico em vitamina E e sabor suave.",
+    "image_url": "https://images.unsplash.com/photo-1448907507367-578365a1a662?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Macarrão Parafuso 500g",
+    "description": "Macarrão parafuso com excelente absorção de molhos cremosos.",
+    "image_url": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Leite Desnatado 1L",
+    "description": "Leite desnatado com baixo teor de gordura e sabor equilibrado.",
+    "image_url": "https://images.unsplash.com/photo-1582111973947-2f1fb496fc95?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Manteiga 200g",
+    "description": "Manteiga cremosa e salgada, ideal para receitas e pães.",
+    "image_url": "https://images.unsplash.com/photo-1589308078055-504c6ae85b3e?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Margarina 500g",
+    "description": "Margarina tradicional com textura cremosa e sabor suave.",
+    "image_url": "https://images.unsplash.com/photo-1617634667039-8ddfd5e76879?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Ovos Brancos Dúzia",
+    "description": "Ovos brancos frescos, versáteis para todas as preparações.",
+    "image_url": "https://images.unsplash.com/photo-1584270354949-1f5c7846de41?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Banana Prata kg",
+    "description": "Bananas prata maduras, doces e nutritivas.",
+    "image_url": "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Tomate kg",
+    "description": "Tomates vermelhos e suculentos, ideais para molhos e saladas.",
+    "image_url": "https://images.unsplash.com/photo-1576402187878-974f70a056f9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Cebola kg",
+    "description": "Cebolas médios com aroma marcante, perfeitas para refogados.",
+    "image_url": "https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Batata kg",
+    "description": "Batatas selecionadas para assados, purês e frituras.",
+    "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Cenoura kg",
+    "description": "Cenouras frescas e crocantes, ricas em betacaroteno.",
+    "image_url": "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Alface Unidade",
+    "description": "Alface crespa fresca e hidratante, perfeita para saladas.",
+    "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Frango Congelado kg",
+    "description": "Frango congelado inteiro, suculento e pronto para assar.",
+    "image_url": "https://images.unsplash.com/photo-1612874472269-5aa8489817ee?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Carne Moída kg",
+    "description": "Carne bovina moída fresca, ideal para molhos e recheios.",
+    "image_url": "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Sardinha em Lata 125g",
+    "description": "Sardinhas em lata ricas em ômega-3 para refeições rápidas.",
+    "image_url": "https://images.unsplash.com/photo-1613479679984-5c7a992adab3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Atum em Lata 170g",
+    "description": "Atum sólido em água, perfeito para saladas e sanduíches.",
+    "image_url": "https://images.unsplash.com/photo-1580554840035-4c0d81a273b8?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Molho de Tomate 340g",
+    "description": "Molho de tomate tradicional com textura encorpada.",
+    "image_url": "https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Extrato de Tomate 350g",
+    "description": "Extrato de tomate concentrado para realçar sabores.",
+    "image_url": "https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Sabão em Pó 1kg",
+    "description": "Sabão em pó perfumado com alto rendimento para roupas limpas.",
+    "image_url": "https://images.unsplash.com/photo-1627496031745-01bc7351fc03?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Detergente 500ml",
+    "description": "Detergente líquido eficiente na remoção de gorduras.",
+    "image_url": "https://images.unsplash.com/photo-1615485737543-6170fc8c3b94?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Papel Higiênico 4 unidades",
+    "description": "Papel higiênico folha dupla com maciez superior.",
+    "image_url": "https://images.unsplash.com/photo-1584551444260-512f74ef0f3b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Sabonete 90g",
+    "description": "Sabonete glicerinado com fragrância refrescante.",
+    "image_url": "https://images.unsplash.com/photo-1588779485631-8f34f31b3a67?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Shampoo 325ml",
+    "description": "Shampoo nutritivo que limpa e hidrata profundamente.",
+    "image_url": "https://images.unsplash.com/photo-1625848886068-185c1f286df9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Condicionador 325ml",
+    "description": "Condicionador hidratante para fios macios e brilhantes.",
+    "image_url": "https://images.unsplash.com/photo-1625848886068-185c1f286df9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Creme Dental 90g",
+    "description": "Creme dental com proteção anticáries prolongada.",
+    "image_url": "https://images.unsplash.com/photo-1588779485711-2694f3b5b730?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Água Mineral 1,5L",
+    "description": "Água mineral purificada com equilíbrio de minerais.",
+    "image_url": "https://images.unsplash.com/photo-1582719478181-2cf4e1f7f22a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Refrigerante 2L",
+    "description": "Refrigerante tradicional com sabor marcante para acompanhar refeições.",
+    "image_url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Suco de Laranja 1L",
+    "description": "Suco de laranja integral, refrescante e cheio de energia.",
+    "image_url": "https://images.unsplash.com/photo-1558640472-9d2a7deb7f62?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Biscoito Recheado 130g",
+    "description": "Biscoito recheado crocante com recheio cremoso.",
+    "image_url": "https://images.unsplash.com/photo-1509365465985-2b8b6785d83c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Bolacha de Água e Sal 200g",
+    "description": "Bolacha leve e crocante, ideal para acompanhamentos.",
+    "image_url": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Achocolatado 400g",
+    "description": "Achocolatado em pó com sabor intenso de chocolate.",
+    "image_url": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80"
+  }
+]
+

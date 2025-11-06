@@ -1,0 +1,493 @@
+@import 'tailwindcss';
+
+@import "tw-animate-css";
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    --font-sans:
+        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+    --background: #f6fff9;
+    --foreground: #13281c;
+    --card: #ffffff;
+    --card-foreground: #13281c;
+    --popover: #ffffff;
+    --popover-foreground: #13281c;
+    --primary: #0a9b4d;
+    --primary-foreground: #f1fff6;
+    --secondary: #fff4d6;
+    --secondary-foreground: #8b5d13;
+    --muted: #e8f4ec;
+    --muted-foreground: #486153;
+    --accent: #dfffe7;
+    --accent-foreground: #0f5132;
+    --destructive: #f45866;
+    --destructive-foreground: #ffffff;
+    --border: #d0e4d7;
+    --input: #cde0d3;
+    --ring: #9fd5b1;
+    --chart-1: #0a9b4d;
+    --chart-2: #ffc857;
+    --chart-3: #2b8a3e;
+    --chart-4: #73c37b;
+    --chart-5: #137547;
+    --radius: 0.875rem;
+    --sidebar: #ffffff;
+    --sidebar-foreground: #133022;
+    --sidebar-primary: #0a9b4d;
+    --sidebar-primary-foreground: #f1fff6;
+    --sidebar-accent: #e8f4ec;
+    --sidebar-accent-foreground: #0f5132;
+    --sidebar-border: #dcefe2;
+    --sidebar-ring: #b9e3c9;
+}
+
+.dark {
+    --background: #09130b;
+    --foreground: #f6fff9;
+    --card: #0f1e14;
+    --card-foreground: #f6fff9;
+    --popover: #0f1e14;
+    --popover-foreground: #f6fff9;
+    --primary: #33d17a;
+    --primary-foreground: #062510;
+    --secondary: #463814;
+    --secondary-foreground: #fcead0;
+    --muted: #122719;
+    --muted-foreground: #8bb69c;
+    --accent: #123c22;
+    --accent-foreground: #f1fff6;
+    --destructive: #ef6f7b;
+    --destructive-foreground: #2b0b0d;
+    --border: #163624;
+    --input: #1a3d2a;
+    --ring: #1f5134;
+    --chart-1: #33d17a;
+    --chart-2: #f9d56f;
+    --chart-3: #81e6b0;
+    --chart-4: #3a9f61;
+    --chart-5: #47d58a;
+    --sidebar: #0f1f15;
+    --sidebar-foreground: #f5fff7;
+    --sidebar-primary: #33d17a;
+    --sidebar-primary-foreground: #04180d;
+    --sidebar-accent: #11341f;
+    --sidebar-accent-foreground: #d8fbe7;
+    --sidebar-border: #133522;
+    --sidebar-ring: #275a3b;
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        background-image: radial-gradient(circle at top left, rgba(10, 155, 77, 0.08), transparent 55%),
+            radial-gradient(circle at bottom right, rgba(255, 200, 87, 0.12), transparent 45%);
+    }
+}
+
+/* Estilos customizados para o sistema de pedidos */
+@layer components {
+    /* Animação suave para cards */
+    .order-card {
+        @apply transition-all duration-300 ease-in-out;
+        @apply hover:shadow-xl hover:scale-[1.01];
+        background: linear-gradient(135deg, rgba(10, 155, 77, 0.08), rgba(223, 255, 231, 0.2));
+        @apply border border-border;
+    }
+
+    /* Estilo para itens da lista de compras */
+    .order-item-card {
+        @apply transition-all duration-200;
+        @apply hover:shadow-md hover:border-primary/50;
+        @apply bg-gradient-to-br from-card to-muted/40;
+    }
+
+    /* Badge de total do pedido */
+    .order-total-badge {
+        @apply bg-gradient-to-r from-primary to-emerald-500;
+        @apply text-primary-foreground;
+        @apply shadow-lg;
+        @apply transition-all duration-300;
+        @apply hover:shadow-xl;
+    }
+
+    /* Tabela de estoque estilizada */
+    .stock-table {
+        @apply w-full;
+    }
+
+    .stock-table thead {
+        @apply bg-gradient-to-r from-muted to-muted/50;
+        @apply border-b-2 border-border;
+    }
+
+    .stock-table tbody tr {
+        @apply transition-all duration-150;
+        @apply hover:bg-muted/50;
+        @apply border-b border-border/50;
+    }
+
+    /* Cards de estatísticas */
+    .stat-card {
+        @apply bg-gradient-to-br from-card to-muted;
+        @apply border border-border;
+        @apply shadow-sm;
+        @apply transition-all duration-300;
+        @apply hover:shadow-lg hover:scale-105;
+    }
+
+    /* Botão de ação principal */
+    .action-button-primary {
+        @apply bg-gradient-to-r from-primary to-emerald-500;
+        @apply shadow-md;
+        @apply transition-all duration-200;
+        @apply hover:shadow-lg hover:scale-105;
+        @apply active:scale-95;
+    }
+
+    /* Input com foco estilizado */
+    .styled-input {
+        @apply transition-all duration-200;
+        @apply focus:ring-2 focus:ring-primary/50;
+        @apply focus:border-primary;
+    }
+
+    /* Alerta de estoque */
+    .stock-alert {
+        @apply animate-pulse;
+        @apply bg-gradient-to-r from-amber-100 to-amber-50 dark:from-amber-900/40 dark:to-amber-900/10;
+        @apply border-l-4 border-amber-500;
+        @apply shadow-md;
+    }
+
+    /* Badge de status */
+    .status-badge {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+        @apply transition-all duration-200;
+    }
+
+    .status-badge-success {
+        @apply bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+    }
+
+    .status-badge-warning {
+        @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400;
+    }
+
+    .status-badge-danger {
+        @apply bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400;
+    }
+
+    /* Container de produtos */
+    .products-container {
+        @apply space-y-3;
+    }
+
+    .product-item {
+        @apply bg-card border border-border rounded-lg p-4;
+        @apply transition-all duration-200;
+        @apply hover:border-primary/40 hover:shadow-md;
+    }
+
+    /* Loading spinner customizado */
+    .loading-spinner {
+        @apply animate-spin rounded-full border-4 border-muted border-t-primary;
+    }
+
+    /* Efeito de shimmer para loading */
+    .shimmer {
+        @apply animate-pulse bg-gradient-to-r from-muted via-muted/50 to-muted;
+        @apply bg-[length:200%_100%];
+        animation: shimmer 2s infinite;
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: -200% 0;
+        }
+        100% {
+            background-position: 200% 0;
+        }
+    }
+
+    /* Card de pedido com efeito de elevação */
+    .order-list-card {
+        @apply bg-gradient-to-br from-card via-card to-muted;
+        @apply border border-border;
+        @apply shadow-sm;
+        @apply transition-all duration-300;
+        @apply hover:shadow-xl hover:border-primary/30;
+        @apply hover:-translate-y-1;
+    }
+
+    /* Header de página estilizado */
+    .page-header {
+        @apply bg-gradient-to-r from-primary/10 via-primary/5 to-transparent;
+        @apply border-b border-border;
+        @apply p-6 rounded-lg mb-6;
+    }
+
+    /* Grid de produtos responsivo */
+    .products-grid {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+    }
+
+    /* Badge de quantidade em estoque */
+    .stock-badge {
+        @apply inline-flex items-center justify-center;
+        @apply min-w-[3rem] px-3 py-1 rounded-full;
+        @apply text-sm font-semibold;
+        @apply transition-all duration-200;
+    }
+
+    .stock-badge-high {
+        @apply bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400;
+    }
+
+    .stock-badge-medium {
+        @apply bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300;
+    }
+
+    .stock-badge-low {
+        @apply bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300;
+    }
+
+    .stock-badge-empty {
+        @apply bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-300;
+        @apply animate-pulse;
+    }
+
+    /* Select estilizado */
+    .styled-select {
+        @apply appearance-none;
+            @apply bg-card border border-input;
+        @apply rounded-md px-3 py-2;
+            @apply text-foreground;
+        @apply transition-all duration-200;
+        @apply focus:ring-2 focus:ring-primary/50 focus:border-primary;
+        @apply hover:border-primary/50;
+    }
+
+        .styled-select option {
+            color: var(--color-foreground);
+            background-color: var(--color-card);
+        }
+
+    /* Scrollbar customizada */
+    .custom-scrollbar::-webkit-scrollbar {
+        @apply w-2 h-2;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        @apply bg-muted rounded-full;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-border rounded-full;
+        @apply hover:bg-primary/50;
+    }
+
+    /* Animações de entrada */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.3s ease-out;
+    }
+
+    /* Efeito de slide para modais */
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .slide-up {
+        animation: slideUp 0.3s ease-out;
+    }
+
+    /* Card de resumo do pedido */
+    .order-summary-card {
+        @apply bg-gradient-to-br from-primary/10 via-primary/5 to-emerald-100;
+        @apply border-2 border-primary/15;
+        @apply rounded-xl p-6;
+        @apply shadow-lg;
+    }
+
+    /* Botão de ação secundária */
+    .action-button-secondary {
+        @apply bg-gradient-to-r from-secondary to-amber-100;
+        @apply shadow-sm;
+        @apply transition-all duration-200;
+        @apply hover:shadow-md hover:scale-105;
+        @apply active:scale-95;
+    }
+
+    /* Divisor estilizado */
+    .styled-divider {
+        @apply border-t border-border;
+        @apply my-6;
+        @apply relative;
+    }
+
+    .styled-divider::before {
+        content: '';
+        @apply absolute top-0 left-1/2 transform -translate-x-1/2;
+        @apply w-12 h-0.5 bg-primary rounded-full;
+    }
+
+    /* Hero section */
+    .hero-banner {
+        @apply text-white rounded-2xl relative overflow-hidden shadow-2xl;
+        background: linear-gradient(120deg, #0b8e44 0%, #127f38 35%, #044c1f 100%);
+        padding: 3.5rem;
+    }
+
+    .hero-banner::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.18), transparent 55%),
+            radial-gradient(circle at 75% 0%, rgba(255, 243, 200, 0.2), transparent 45%);
+        opacity: 0.9;
+        pointer-events: none;
+    }
+
+    .hero-banner-content {
+        position: relative;
+        z-index: 1;
+        @apply grid gap-6 md:grid-cols-[1fr_auto] items-center;
+    }
+
+    .hero-banner h1 {
+        @apply text-3xl md:text-4xl font-semibold leading-tight;
+    }
+
+    .hero-banner p {
+        @apply text-base md:text-lg text-emerald-100 max-w-2xl;
+    }
+
+    .hero-cta {
+        @apply flex flex-col md:flex-row gap-3 items-start md:items-center;
+    }
+
+    .hero-badge {
+        @apply inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-medium;
+        @apply shadow-lg backdrop-blur;
+    }
+
+    .hero-stat-grid {
+        @apply grid gap-4 md:grid-cols-3;
+    }
+
+    .hero-stat-card {
+        @apply bg-white rounded-xl p-4 shadow-lg border border-border flex items-center gap-4;
+    }
+
+    /* Sidebar customization */
+    .groceries-sidebar {
+        background: linear-gradient(180deg, #ffffff 0%, #eef9f1 100%);
+        border-right: 1px solid var(--sidebar-border);
+        color: var(--sidebar-foreground);
+    }
+
+    .groceries-sidebar [data-slot='sidebar-menu-button'] {
+        @apply transition-all duration-200 rounded-xl font-medium text-sm;
+    }
+
+    .groceries-sidebar [data-slot='sidebar-menu-button'][data-active='true'] {
+        background: linear-gradient(120deg, rgba(10, 155, 77, 0.18), rgba(10, 155, 77, 0.05));
+        @apply text-primary shadow-sm;
+    }
+
+    .groceries-sidebar [data-slot='sidebar-group-label'] {
+        @apply text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground;
+    }
+}
+
+/* Estilos para tema escuro */
+.dark {
+    .order-item-card {
+        @apply bg-gradient-to-br from-card to-muted/10;
+    }
+
+    .stat-card {
+        @apply bg-gradient-to-br from-card to-muted/20;
+    }
+
+    .order-list-card {
+        @apply bg-gradient-to-br from-card via-card to-muted/5;
+    }
+}
