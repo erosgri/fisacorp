@@ -425,5 +425,5 @@ Este projeto foi desenvolvido para fins educacionais e de avaliação.
 
 ---
 
-**Desenvolvido com ❤️ para Fisa Supermercados**
+**Desenvolvido por Eros Grigolli**
 
